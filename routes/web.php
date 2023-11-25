@@ -16,3 +16,31 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/datos', function () {
+    return view('datos');
+});
+
+Route::get('/horario', function () {
+    return view('horario');
+});
+
+Route::get('/calificaciones', function () {
+    return view('calificaciones');
+});
+
+Route::get('/kardex', function () {
+    return view('kardex');
+});
+
+Route::get('/grupos', function () {
+    return view('grupos');
+});
+
+Route::get('/pagos', function () {
+    return view('pagos');
+});
+
+Route::get('/evaluacion', function () {
+    return view('evaluacion');
+});
