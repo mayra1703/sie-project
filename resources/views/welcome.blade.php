@@ -19,7 +19,7 @@
         </div>
     </nav>
 
-    <nav class="bg-gray-50 dark:bg-gray-700">
+    <nav class="bg-gradient-to-r from-dark-blue to-light-blue">
         <div class="max-w-screen-xl px-4 py-3 mx-auto">
             <div class="flex items-center">
                 <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
