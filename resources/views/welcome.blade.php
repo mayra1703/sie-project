@@ -13,8 +13,10 @@
             <img src="logoSie.jpeg" class="h-16"/>
 
             <div class="flex items-center space-x-6 rtl:space-x-reverse">
-                <a href="tel:5541251234" class="text-base text-gray-500 hover:underline">(646) 123-45-67</a>
-                <img src="iteLogo.png" class="h-16"/>
+                <a href="tel:5541251234" class="text-base text-gray-500 hover:underline" title='Pagina ITE oficial'>(646) 123-45-67</a>
+                <a href='https://www.ensenada.tecnm.mx' alt='Pagina ITE oficial'>
+                    <img src="iteLogo.png" class="h-16"/>
+                </a>
             </div>
 
         </div>
@@ -96,7 +98,7 @@
     
     <div class='flex flex-col m-2'>
         <p class='text-center justify-center text-light-blue font-bold text-xl m-2'>Selecciona tu tipo de acceso</p>
-        <div class='flex items-center justify-center mt-2'>
+        <div class='flex items-center justify-center'>
             <a href="#" class="flex flex-col items-center justify-center m-4 bg-dark-blue border border-dark-blue rounded-lg shadow w-52 hover:bg-gold hover:border-gold">
                 <div class="flex flex-col justify-between p-3 leading-normal">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class='fill-white h-10'>
