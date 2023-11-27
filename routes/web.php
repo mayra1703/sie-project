@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CarouselController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +45,5 @@ Route::get('/pagos', function () {
 Route::get('/evaluacion', function () {
     return view('evaluacion');
 });
+
+Route::get('/carousel', [CarouselController::class, 'showCarousel']);
