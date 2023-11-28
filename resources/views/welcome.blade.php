@@ -175,5 +175,10 @@
         </div>
     </div>
     
+    <div class='flex justify-between text-center bg-gradient-to-r from-dark-blue to-light-blue h-32'>
+        <img src="{{ asset('imagenes/sieLogoBlanco.png') }}" class="absolute h-20 m-4" alt="...">
+        
+        <p class='text-white text-sm text-right mt-8 ml-80'>Siguenos en nuestras redes oficiales TecNM ITE</p>
+    </div>
 </body>
 </html>
