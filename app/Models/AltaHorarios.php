@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class AltaHorarios extends Model
 {
+    protected $fillable = [
+        'horas_curso',
+        'hora_inicio',
+        'hora_final',
+    ];
     use HasFactory;
 }

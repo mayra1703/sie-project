@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class AltaCalificaciones extends Model
 {
+    protected $fillable = ['calificacion'];
     use HasFactory;
 }
