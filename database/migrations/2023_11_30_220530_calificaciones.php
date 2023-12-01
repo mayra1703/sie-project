@@ -14,9 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('calificaciones', function (Blueprint $table){
-            $table->engine = 'InnoBD';
 
-            $table->bigIncrements('id_calificacion');
             $table->float('calificacion', 2, 2);
         });
     }

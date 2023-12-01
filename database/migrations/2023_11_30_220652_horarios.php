@@ -14,7 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::create('horarios', function (Blueprint $table){
-            $table->engine = 'InnoBD';
 
             $table->bigIncrements('id_horario');
             $table->smallInteger('horas_curso');

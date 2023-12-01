@@ -14,12 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('cursos', function (Blueprint $table){
-            $table->engine = 'InnoBD';
 
-            $table->string('id_curso',10);
+            $table->bigIncrements('id_curso');
             $table->string('nombre_curso',30);
-            $table->integer('creditos');
-            $table->text('descripcion');
+            $table->integer('creditos')->nullable();
+            $table->text('descripcion')->nullable();
         });
     }
 

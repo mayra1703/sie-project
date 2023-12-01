@@ -14,11 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('pagos', function (Blueprint $table){
-            $table->engine = 'InnoBD';
 
             $table->bigIncrements('id_pagos');
             $table->decimal('monto',  $digit = 5, $decimal = 2);
-            $table->date('fecha_pago');
+            $table->date('fecha_pago')->nullable();
         });
     }
 

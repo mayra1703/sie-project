@@ -14,15 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('estudiantes', function (Blueprint $table){
-            $table->engine = 'InnoBD';
 
             $table->bigIncrements('id_estudiante');
             $table->string('nombre_estudiante',30);
             $table->string('apeP_estudiante',30);
-            $table->string('apeM_estudiante',30);
+            $table->string('apeM_estudiante',30)->nullable();
             $table->date('fechaN_estudiante');
-            $table->string('direccion_estudiante',255);
-            $table->string('tel_estudiante')->unsigned();
+            $table->string('direccion_estudiante',255)->nullable();
+            $table->integer('tel_estudiante')->nullable();
             $table->string('correo_estudiante',255);
             $table->string('carrera',255);
         });
