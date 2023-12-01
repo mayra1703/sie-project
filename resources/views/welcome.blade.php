@@ -88,7 +88,7 @@
         <div class='flex items-center justify-center bg-gradient-to-r from-dark-blue to-light-blue shadow mx-12 h-72 m-3 mb-6'>
             <img class="w-1/2 h-72 rounded-none" src="{{ asset('imagenes/grupo.jpeg') }}" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="m-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">¿Cuál es el proposito de SIE?</h5>
+                <h5 class="m-2 text-3xl font-bold tracking-tight text-white">¿Cuál es el proposito de SIE?</h5>
                 <p class="m-2 font-normal text-white text-justify">El Sistema de Información Educativa (SIE) aspira a convertirse en un sistema de levantamiento estadístico de datos escolares que permite la descripción de la situación actual y los posibles avances en materia educativa.
                     Permite la consulta de historial academico, consulta de horarios, asignación de materias, entre otras funciones.
                 </p>
