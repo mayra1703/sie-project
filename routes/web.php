@@ -46,4 +46,6 @@ Route::get('/evaluacion', function () {
     return view('evaluacion');
 });
 
-Route::get('/carousel', [CarouselController::class, 'showCarousel']);
+Route::get('/login', function(){
+    return view('login');
+});
