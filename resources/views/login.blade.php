@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    @vite('resources/css/csslogin.css')
+    <link rel="stylesheet" href="{{ asset('css/csslogin.css') }}">
     <title>Inicio de sesion</title>
 </head>
 <body>
-    <div class="body">
         <div class="form-body">
             <img src="./user.png" alt="user-login">
             <p class="text">Bienvenido al SIE</p>
@@ -17,6 +17,6 @@
                 <button>Inicio Sesion</button>
             </from>
         </div>
-    </div>
+    
 </body>
 </html>
