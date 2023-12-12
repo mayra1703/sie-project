@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/cssdashboard.css')
+    @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{ asset('css/cssdashboard.css') }}">
     <title>Datos Personales</title>
 </head>
