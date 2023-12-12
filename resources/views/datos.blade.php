@@ -8,53 +8,62 @@
     <title>Datos Personales</title>
 </head>
 <body>
-    <div class="container">
-        <nav classname='relative top-0 bottom-0 h-100 w-200 bg-white overflow-hidden shadow-stone-950 '>
-            <ul>
-                <li><a href="#" class="logo">
-                    <img src="../iconSie.jpeg" alt="">
-                     <span class="nav-item">Panel de Inicio</span>
-                </a></li>
-                <li><a href=""><i class="fas fa-home"></i>
-                    <span class="nav-item">Inicio</span></a></li>
-                <li><a href="#">
-                    <i class="fas fa-kardex"></i>
-                    <span class="nav-item">Kardex</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fas fa-wallet"></i>
-                    <span class="nav-item">Pagos</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fas fa-grades"></i>
-                    <span class="nav-item">Calificaciones</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fas fa-schedule"></i>
-                   <span class="nav-item">Horario</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fas fa-user"></i>
-                    <span class="nav-item">Perfil</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fas fa-logout"></i>
-                    <span class="nav-item">Cerrar Sesion</span>
-                </a></li>
-                <li><a href=""></a></li>
+    <div class="flex text-white">
+        <nav class='h-full w-2/3 bg-gradient-to-b from-dark-blue to-light-blue'>
+            <ul class="w-full m-2">
+                <li class="w-full text-center p-2">
+                    <a href="#" class="flex text-center">
+                        <img src="../iconSie.jpeg" alt="" class="w-10 h-10">
+                        <span class="text-center m-2">Panel de Inicio</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-item">Inicio</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="#">
+                        <i class="fas fa-kardex"></i>
+                        <span class="nav-item">Kardex</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="#">
+                        <i class="fas fa-wallet"></i>
+                        <span class="nav-item">Pagos</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="#">
+                        <i class="fas fa-grades"></i>
+                        <span class="nav-item">Calificaciones</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="#">
+                        <i class="fas fa-schedule"></i>
+                        <span class="nav-item">Horario</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span class="nav-item">Perfil</span>
+                    </a>
+                </li>
+                <li class="hover:bg-white hover:text-dark-blue p-2">
+                    <a href="#">
+                        <i class="fas fa-logout"></i>
+                        <span class="nav-item">Cerrar Sesion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
             </ul>
         </nav>
-        <section class="main">
-            <div class="main-top">
-                <h1>Datos Personales</h1>
-                <i class="fas fa-user-cong"></i>
-            </div>
-            <div class="main-datos">
-                <div class="card">
-                    
-                </div>
-            </div>
-        </section>
     </div>
     
 </body>
