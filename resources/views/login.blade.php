@@ -8,15 +8,53 @@
     <title>Inicio de sesion</title>
 </head>
 <body>
-        <div class="form-body">
-            <img src="./user.png" alt="user-login">
-            <p class="text">Bienvenido al SIE</p>
-            <from class="login-from">
-                <input type="text" placeholder="Numero de control">
-                <input type="password" placeholder="Contrasena">
-                <button>Inicio Sesion</button>
-                <button>Regresar</button>
-            </from>
+        <div class="container">
+            <form action="#">
+                <div class="form-container">
+                    <div class="login-form">
+                        <div class="title">Bienvenido al SIE</div>
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" placeholder="Numero de control" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="password" placeholder="Contrasena" required>
+                                </div>
+                                <div class="text"><a href="#">Olvide Contrasena</a></div>
+                                <div class="button input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="submit" value="Ingresar">
+                                </div>
+                                <div class="text">Aun no tienes cuenta? <label for="">Registrate Ahora</label></div>
+                            </div>
+                    </div>
+                    <div class="signup-form">
+                        <div class="title">Registrate en el SIE</div>
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" placeholder="Nombre Completo" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-nvelope"></i>
+                                    <input type="text" placeholder="Numero de control" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="password" placeholder="Contrasena" required>
+                                </div>
+                                <div class="text"><a href="#">Olvide Contrasena</a></div>
+                                <div class="button input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="submit" value="Ingresar">
+                                </div>
+                                <div class="text">Ya tienes cuenta? <label for="">Iniciar sesion</label></div>
+                            </div>
+                    </div>
+                </div>
+            </form>
         </div>
     
 </body>
