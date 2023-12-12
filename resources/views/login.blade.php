@@ -15,6 +15,7 @@
                 <input type="text" placeholder="Numero de control">
                 <input type="password" placeholder="Contrasena">
                 <button>Inicio Sesion</button>
+                <button>Regresar</button>
             </from>
         </div>
     
