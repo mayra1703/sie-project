@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -35,7 +36,7 @@ class AuthController extends Controller
         return redirect('/')->withSuccess('Los datos no son correctos');
     }
 
-    public function welcome(){
+    public function logados(){
         if(Auth::check()){
             return view('calificaciones');
         }

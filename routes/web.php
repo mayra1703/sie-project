@@ -46,6 +46,6 @@ Route::get('/evaluacion', function () {
     return view('evaluacion');
 });
 
-Route::get('/login', function(){
+Route::get('/login', function () {
     return view('login');
 })->name('login');
