@@ -15,16 +15,13 @@
                         <div class="title">Bienvenido al SIE</div>
                             <div class="input-boxes">
                                 <div class="input-box">
-                                    <i class="fas fa-envelope"></i>
                                     <input type="text" placeholder="Numero de control" required>
                                 </div>
                                 <div class="input-box">
-                                    <i class="fas fa-envelope"></i>
                                     <input type="password" placeholder="Contrasena" required>
                                 </div>
                                 <div class="text"><a href="#">Olvide Contrasena</a></div>
                                 <div class="button input-box">
-                                    <i class="fas fa-envelope"></i>
                                     <input type="submit" value="Ingresar">
                                 </div>
                                 <div class="text">Aun no tienes cuenta? <label for="">Registrate Ahora</label></div>
@@ -34,7 +31,6 @@
                         <div class="title">Registrate en el SIE</div>
                             <div class="input-boxes">
                                 <div class="input-box">
-                                    <i class="fas fa-user"></i>
                                     <input type="text" placeholder="Nombre Completo" required>
                                 </div>
                                 <div class="input-box">
@@ -42,12 +38,10 @@
                                     <input type="text" placeholder="Numero de control" required>
                                 </div>
                                 <div class="input-box">
-                                    <i class="fas fa-envelope"></i>
                                     <input type="password" placeholder="Contrasena" required>
                                 </div>
                                 <div class="text"><a href="#">Olvide Contrasena</a></div>
                                 <div class="button input-box">
-                                    <i class="fas fa-envelope"></i>
                                     <input type="submit" value="Ingresar">
                                 </div>
                                 <div class="text">Ya tienes cuenta? <label for="">Iniciar sesion</label></div>
