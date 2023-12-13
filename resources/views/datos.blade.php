@@ -9,7 +9,7 @@
 </head>
 
 <body class="h-screen">
-    <div class="flex w-full">
+    <div class="flex h-screen">
         <nav class='h-full w-60 bg-gradient-to-b from-dark-blue to-light-blue text-white font-semibold'>
             <ul class="ml-2 mb-2 mt-2">
                 
