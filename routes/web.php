@@ -20,31 +20,31 @@ Route::get('/', function () {
 
 Route::get('/datos', function () {
     return view('datos');
-});
+})->name('datos');
 
 Route::get('/horario', function () {
     return view('horario');
-});
+})->name('horario');
 
 Route::get('/calificaciones', function () {
     return view('calificaciones');
-});
+})->name('calificaciones');
 
 Route::get('/kardex', function () {
     return view('kardex');
-});
+})->name('kardex');
 
 Route::get('/grupos', function () {
     return view('grupos');
-});
+})->name('grupos');
 
 Route::get('/pagos', function () {
     return view('pagos');
-});
+})->name('pagos');
 
 Route::get('/evaluacion', function () {
     return view('evaluacion');
-});
+})->name('evaluacion');
 
 Route::get('/login', function () {
     return view('login');

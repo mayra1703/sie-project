@@ -8,8 +8,8 @@
     <title>Datos Personales</title>
 </head>
 
-<body>
-    <div class="flex h-full">
+<body class="h-screen">
+    <div class="flex w-full">
         <nav class='h-full w-60 bg-gradient-to-b from-dark-blue to-light-blue text-white font-semibold'>
             <ul class="ml-2 mb-2 mt-2">
                 
@@ -55,7 +55,7 @@
                     </a>
                 </li>
                 <li class="hover:bg-white hover:text-dark-blue p-2 rounded-s-lg">
-                    <a href="#evaluacion">
+                    <a href="{{ route('evaluacion') }}">
                         <i class="fas fa-user"></i>
                         <span class="nav-item">Evaluacion Docente</span>
                     </a>
@@ -69,8 +69,8 @@
             </ul>
         </nav>
         
-        <div class="h-full m-3" id="contenedor">
-            <h1>Datos Generales</h1>
+        <div class="m-3 w-full flex" id="contenedor">
+            <iframe id="contenido" src="{{ route('calificaciones') }}" class="flex-grow"></iframe>
         </div>
     </div>
     
