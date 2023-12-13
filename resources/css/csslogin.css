@@ -15,11 +15,89 @@ body{
 }
 
 .container{
+    position: relative;
     max-width: 850px;
     width: 100%;
     background: #fff;
     padding: 40px 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
+}
+.container .cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+.container .cover::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #001D3D;
+    opacity: 0.5;
+    z-index: 100;
+}
+.container .cover::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #001D3D;
+    opacity: 0.5;
+    z-index: 100;
+    transform: rotateY(180deg);
+}
+
+.container #flip:checked ~ .cover{
+    transform: rotateY(-180deg);
+}
+
+.container .cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 12;
+    backface-visibility: hidden;
+}
+
+.container .cover .back .backImg{
+    transform: rotateY(180deg);
+}
+
+.container .cover .text{
+    position: absolute;
+    z-index: 111;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover .text .text-1,
+.cover .text .text-2{
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.cover .back .text .text-1,
+.cover .back .text .text-2{
+    transform: rotateY(180deg);   
+}
+
+.cover .text .text-2{
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .container form{
@@ -35,7 +113,7 @@ body{
 .form-container .login-form,
 .form-container .signup-form{
     width: calc(100% / 2 - 25px);
-    /*background: red;*/
+    
 }
 form .form-container .title{
     position: relative;
@@ -67,7 +145,8 @@ form .form-container .input-box{
     align-items: center;
     height: 50px;
     width: 100%;
-    margin: 0 10px;
+    margin: 10px 0;
+    position: relative;
 }
 
 .form-container .input-box input{
@@ -79,5 +158,51 @@ form .form-container .input-box{
     font-size: 16px;
     font-weight: 500;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    transition:  all 0.3s ease;
+    /*transition:  all 0.3s ease;*/
+}
+.form-container .input-box input:focus,
+.form-container .input-box input:valid{
+    border-color: #001D3D;
+}
+form .form-container .button .text{
+    font-size: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+form .form-container  .text a{
+    text-decoration: none;
+}
+form .form-container  .text a:hover{
+    text-decoration: underline;
+}
+
+form .form-container .button{
+    color: #fff;
+    margin-top: 40px;
+}
+form .form-container .button input{
+    color: #fff;
+    background: #001D3D;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+form .form-container .button input:hover{
+    background: #E0B000;
+}
+form .form-container label{
+    color: #E0B000;
+    cursor: pointer;
+}
+form .form-container label:hover{
+    text-decoration: underline;
+}
+
+form .form-container .login-text,
+form .form-container .sign-up-text{
+    text-align: center;
+    margin: 25px;
 }
