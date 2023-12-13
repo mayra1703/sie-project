@@ -16,7 +16,7 @@ use App\Http\Controllers\CarouselController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/datos', function () {
     return view('datos');
