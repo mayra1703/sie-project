@@ -13,58 +13,54 @@
             <div class="cover">
                 <div class="front">
                     <img src="../imagenes/objetos.jpg" alt="">
-                    <div class="text">
-                        <span class="text-1">Orgullo Albatros</span>
-                        <span class="text-2">Por la tecnologia de hoy <br>y del futuro </span>
-                    </div>
                 </div>
                 <div class="back">
                     <img class="backImg" src="../imagenes/feriaLibro1.jpg" alt="">
-                    <div class="text">
-                        <span class="text-1">Orgullo TecNM</span>
-                        <span class="text-2">Todos somos <br>TecNM </span>
-                    </div>
                 </div>
             </div>
-            <form action="#">
-                <div class="form-container">
+            <div class="forms">
+                <div class="form-content">
                     <div class="login-form">
                         <div class="title">Bienvenido al SIE</div>
-                            <div class="input-boxes">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Numero de control" required>
+                            <form action="#">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <input type="text" placeholder="Numero de control" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="password" placeholder="Contrasena" required>
+                                    </div>
+                                    <div class="text"><a href="#">Olvide Contrasena</a></div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Ingresar">
+                                    </div>
+                                    <div class="text login-text">Aun no tienes cuenta? <label for="flip">Registrate Ahora</label></div>
                                 </div>
-                                <div class="input-box">
-                                    <input type="password" placeholder="Contrasena" required>
+                            </form>
+                        </div>
+                        <div class="signup-form">
+                            <div class="title">Registrate en el SIE</div>
+                            <form action="#">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <input type="text" placeholder="Nombre Completo" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-nvelope"></i>
+                                        <input type="text" placeholder="Numero de control" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="password" placeholder="Contrasena" required>
+                                    </div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Ingresar">
+                                    </div>
+                                    <div class="text sign-up-text">Ya tienes cuenta? <label for="flip">Iniciar sesion</label></div>
                                 </div>
-                                <div class="text"><a href="#">Olvide Contrasena</a></div>
-                                <div class="button input-box">
-                                    <input type="submit" value="Ingresar">
-                                </div>
-                                <div class="text login-text">Aun no tienes cuenta? <label for="flip">Registrate Ahora</label></div>
-                            </div>
-                    </div>
-                    <div class="signup-form">
-                        <div class="title">Registrate en el SIE</div>
-                            <div class="input-boxes">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Nombre Completo" required>
-                                </div>
-                                <div class="input-box">
-                                    <i class="fas fa-nvelope"></i>
-                                    <input type="text" placeholder="Numero de control" required>
-                                </div>
-                                <div class="input-box">
-                                    <input type="password" placeholder="Contrasena" required>
-                                </div>
-                                <div class="button input-box">
-                                    <input type="submit" value="Ingresar">
-                                </div>
-                                <div class="text sign-up-text">Ya tienes cuenta? <label for="flip">Iniciar sesion</label></div>
-                            </div>
+                            </form>    
+                        </div>
                     </div>
                 </div>
-            </form>
         </div>
     
 </body>
