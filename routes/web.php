@@ -47,7 +47,8 @@ Route::get('/evaluacion', function () {
     return view('evaluacion');
 })->name('evaluacion');
 
-Route::get('/cambiar-contenido/{id}', [IframeController::class, 'cambiarContenido'])->name('cambiar-contenido');
+Route::get('/iframe', [IframeController::class, 'calificaciones'])->name('iframe.calificaciones');
+Route::get('/obtener-contenido', [IframeController::class, 'obtenerContenido'])->name('iframe.grupos');
 
 Route::view('/login',"login");
 Route::view('/registro', "register");

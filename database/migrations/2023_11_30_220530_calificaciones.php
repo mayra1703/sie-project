@@ -15,7 +15,15 @@ return new class extends Migration
     {
         Schema::create('calificaciones', function (Blueprint $table){
 
-            $table->float('calificacion', 2, 2);
+            $table->id();
+            $table->unsignedBigInteger('id_estudiante');
+            $table->unsignedBigInteger('id_curso');
+            $table->float('calificacion');
+            $table->timestamps();
+
+            // Claves foráneas
+            $table->foreign('id_estudiante')->references('id_estudiante')->on('estudiantes');
+            $table->foreign('id_curso')->references('id_curso')->on('cursos');
         });
     }
 
