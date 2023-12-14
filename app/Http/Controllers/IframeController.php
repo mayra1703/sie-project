@@ -13,4 +13,8 @@ class IframeController extends Controller
     public function obtenerContenido(){
         return response()->json(['contenido' => view('iframe.grupos')->render()]);
     }
+
+    public function obtenerEvaluacion(){
+        return response()->json(['contenido' => view('iframe.evaluacion')->render()]);
+    }
 }

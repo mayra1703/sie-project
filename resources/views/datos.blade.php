@@ -60,7 +60,7 @@
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="cargarEvaluacion()">
                         <i class="fas fa-user"></i>
                         <span class="nav-item">Evaluacion Docente</span>
                     </a>
@@ -85,35 +85,24 @@
                 fetch("{{ route('iframe.grupos') }}")
                     .then(response => response.json())
                     .then(data => {
-                        // Cambiar el contenido del iframe con el nuevo HTML obtenido
-                        document.getElementById("miIframe").contentWindow.document.open();
-                        document.getElementById("miIframe").contentWindow.document.write(data.contenido);
-                        document.getElementById("miIframe").contentWindow.document.close();
+                        actualizarContenido(data.contenido);
                     });
             }
-        </script>
-        <!--<script>
-            document.addEventListener('DOMContentLoaded', function(){
-                const links = document.querySelectorAll('.nav-item');
 
-                function changeIframeContent(id) {
-                    // Logica para determinar la URL del iframe segun el id
-                    var url = id === 'enlace1' ? "{{ route('calificaciones') }}" : "{{ route('grupos') }}";
-
-                    // Obtener el elemento iframe por su id
-                    var iframe = document.getElementById('miIframe');
-
-                    // Cambiar la URL del iframe
-                    iframe.src = url;
-                }
-
-                links.forEach(link => {
-                    link.addEventListener('click', function(){
-                        changeIframeContent(link.id);
+            function cargarEvaluacion() {
+                fetch("{{ route('iframe.evaluacion') }}")
+                    .then(response => response.json())
+                    .then(data => {
+                        actualizarContenido(data.contenido);
                     });
-                });
-            });
-        </script> -->
+            }
+
+            function actualizarContenido(nuevoContenido) {
+                document.getElementById("miIframe").contentWindow.document.open();
+                document.getElementById("miIframe").contentWindow.document.write(nuevoContenido);
+                document.getElementById("miIframe").contentWindow.document.close();
+            }
+        </script>
     </div>
     
 </body>

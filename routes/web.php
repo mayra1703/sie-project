@@ -50,6 +50,8 @@ Route::get('/evaluacion', function () {
 Route::get('/iframe', [IframeController::class, 'calificaciones'])->name('iframe.calificaciones');
 Route::get('/obtener-contenido', [IframeController::class, 'obtenerContenido'])->name('iframe.grupos');
 
+Route::get('/obtener-evaluacion', [IframeController::class, 'obtenerEvaluacion'])->name('iframe.evaluacion');
+
 Route::view('/login',"login");
 Route::view('/registro', "register");
 Route::view('/datos',"datos");
