@@ -26,10 +26,10 @@
                                 @csrf
                                 <div class="input-boxes">
                                     <div class="input-box">
-                                        <input type="text" placeholder="Numero de control" required>
+                                        <input name="no_control"type="text" placeholder="Numero de control" required>
                                     </div>
                                     <div class="input-box">
-                                        <input type="password" placeholder="Contrasena" required>
+                                        <input name="password" type="password" placeholder="Contrasena" required>
                                     </div>
                                     <div class="text"><a href="#">Olvide Contrasena</a></div>
                                     <div class="button input-box">

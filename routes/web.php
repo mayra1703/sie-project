@@ -52,11 +52,13 @@ Route::view('/registro', "register");
 Route::view('/datos',"datos");
 
 Route::post('login', function(){
-    $credentials = request()->only('no_control', 'password');
-    
-    if(Auth::attempt($credentials)){
-        return 'Your are logged in!';
+    $credentials = request()->only('email', 'password');
+   
+   if(Auth::attempt($credentials)){
+        return view('datos');
+    }else{
+        return view('login');
     }
-    return 'Login Falied';
+    
     
 });
