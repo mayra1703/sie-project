@@ -41,7 +41,7 @@
                         </div>
                         <div class="signup-form">
                             <div class="title">Registrate en el SIE</div>
-                            <form method="POST" >
+                            <form  >
                                 @csrf
                                 <div class="input-boxes">
                                     <div class="input-box">
