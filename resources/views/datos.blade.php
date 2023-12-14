@@ -39,7 +39,7 @@
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="cargarHorario()">
                         <i class="fas fa-grades"></i>
                         <span class="nav-item">Horario</span>
                     </a>
@@ -83,6 +83,14 @@
             function cambiarContenido() {
                 // Realizar una solicitud AJAX para obtener el nuevo contenido
                 fetch("{{ route('iframe.grupos') }}")
+                    .then(response => response.json())
+                    .then(data => {
+                        actualizarContenido(data.contenido);
+                    });
+            }
+
+            function cargarHorario() {
+                fetch("{{ route('iframe.horario') }}")
                     .then(response => response.json())
                     .then(data => {
                         actualizarContenido(data.contenido);

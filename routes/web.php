@@ -49,6 +49,7 @@ Route::get('/evaluacion', function () {
 
 Route::get('/iframe', [IframeController::class, 'calificaciones'])->name('iframe.calificaciones');
 Route::get('/obtener-contenido', [IframeController::class, 'obtenerContenido'])->name('iframe.grupos');
+Route::get('/obtener-horario', [IframeController::class, 'obtenerHorario'])->name('iframe.horario');
 
 Route::get('/obtener-evaluacion', [IframeController::class, 'obtenerEvaluacion'])->name('iframe.evaluacion');
 
