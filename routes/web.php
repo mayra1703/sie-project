@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\IframeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,7 @@ Route::get('/evaluacion', function () {
     return view('evaluacion');
 })->name('evaluacion');
 
+Route::get('/cambiar-contenido/{id}', [IframeController::class, 'cambiarContenido'])->name('cambiar-contenido');
 
 Route::view('/login',"login");
 Route::view('/registro', "register");
