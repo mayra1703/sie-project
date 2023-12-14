@@ -48,8 +48,14 @@ Route::get('/evaluacion', function () {
 })->name('evaluacion');
 
 Route::get('/iframe', [IframeController::class, 'calificaciones'])->name('iframe.calificaciones');
-Route::get('/obtener-contenido', [IframeController::class, 'obtenerContenido'])->name('iframe.grupos');
+
+Route::get('/obtener-grupos', [IframeController::class, 'obtenerGrupos'])->name('iframe.grupos');
+
 Route::get('/obtener-horario', [IframeController::class, 'obtenerHorario'])->name('iframe.horario');
+
+Route::get('/obtener-kardex', [IframeController::class, 'obtenerKardex'])->name('iframe.kardex');
+
+Route::get('/obtener-pagos', [IframeController::class, 'obtenerPagos'])->name('iframe.pagos');
 
 Route::get('/obtener-evaluacion', [IframeController::class, 'obtenerEvaluacion'])->name('iframe.evaluacion');
 

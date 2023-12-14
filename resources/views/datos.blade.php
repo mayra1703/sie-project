@@ -32,7 +32,7 @@
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="javascript:void(0)" onclick="cambiarContenido()">
+                    <a href="javascript:void(0)" onclick="cargarGrupos()">
                         <i class="fas fa-wallet"></i>
                         <span class="nav-item">Grupos Actuales</span>
                     </a>
@@ -46,14 +46,14 @@
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="cargarKardex()">
                         <i class="fas fa-schedule"></i>
                         <span class="nav-item">Kardex</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="cargarPagos()">
                         <i class="fas fa-user"></i>
                         <span class="nav-item">Pagos de Servicios</span>
                     </a>
@@ -80,7 +80,7 @@
         </div>
 
         <script>
-            function cambiarContenido() {
+            function cargarGrupos() {
                 // Realizar una solicitud AJAX para obtener el nuevo contenido
                 fetch("{{ route('iframe.grupos') }}")
                     .then(response => response.json())
@@ -91,6 +91,22 @@
 
             function cargarHorario() {
                 fetch("{{ route('iframe.horario') }}")
+                    .then(response => response.json())
+                    .then(data => {
+                        actualizarContenido(data.contenido);
+                    });
+            }
+
+            function cargarKardex() {
+                fetch("{{ route('iframe.kardex') }}")
+                    .then(response => response.json())
+                    .then(data => {
+                        actualizarContenido(data.contenido);
+                    });
+            }
+
+            function cargarPagos() {
+                fetch("{{ route('iframe.pagos') }}")
                     .then(response => response.json())
                     .then(data => {
                         actualizarContenido(data.contenido);
