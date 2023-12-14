@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CarouselController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +46,17 @@ Route::get('/evaluacion', function () {
     return view('evaluacion');
 });
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+
+Route::view('/login',"login");
+Route::view('/registro', "register");
+Route::view('/datos',"datos");
+
+Route::post('login', function(){
+    $credentials = request()->only('no_control', 'password');
+    
+    if(Auth::attempt($credentials)){
+        return 'Your are logged in!';
+    }
+    return 'Login Falied';
+    
+});

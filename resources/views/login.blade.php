@@ -22,7 +22,8 @@
                 <div class="form-content">
                     <div class="login-form">
                         <div class="title">Bienvenido al SIE</div>
-                            <form action="#">
+                            <form method="POST" >
+                                @csrf
                                 <div class="input-boxes">
                                     <div class="input-box">
                                         <input type="text" placeholder="Numero de control" required>
@@ -34,13 +35,14 @@
                                     <div class="button input-box">
                                         <input type="submit" value="Ingresar">
                                     </div>
-                                    <div class="text login-text">Aun no tienes cuenta? <label for="flip">Registrate Ahora</label></div>
+                                    <div class="text login-text">Aun no tienes cuenta? <label for="flip">Registrate Ahora </label></div>
                                 </div>
                             </form>
                         </div>
                         <div class="signup-form">
                             <div class="title">Registrate en el SIE</div>
-                            <form action="#">
+                            <form method="POST" >
+                                @csrf
                                 <div class="input-boxes">
                                     <div class="input-box">
                                         <input type="text" placeholder="Nombre Completo" required>
