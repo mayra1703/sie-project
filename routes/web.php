@@ -57,7 +57,7 @@ Route::post('login', function(){
     $credentials = request()->only('email', 'password');
    
    if(Auth::attempt($credentials)){
-        return view('welcome');
+        return view('datos');
     }else{
         return view('login');
     }
