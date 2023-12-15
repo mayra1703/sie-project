@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/personales', function () {
+    return view('personales');
+})->name('personales');
+
 Route::get('/datos', function () {
     return view('datos');
 })->name('datos');
@@ -47,7 +51,9 @@ Route::get('/evaluacion', function () {
     return view('evaluacion');
 })->name('evaluacion');
 
-Route::get('/iframe', [IframeController::class, 'calificaciones'])->name('iframe.calificaciones');
+Route::get('/iframe', [IframeController::class, 'personales'])->name('iframe.personales');
+
+Route::get('/obtener-calificaciones', [IframeController::class, 'obtenerCalificaciones'])->name('iframe.calificaciones');
 
 Route::get('/obtener-grupos', [IframeController::class, 'obtenerGrupos'])->name('iframe.grupos');
 
