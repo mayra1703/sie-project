@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('css/cssdashboard.css') }}">
     <title>Calificaciones</title>
 </head>
 <body>
-<div class="relative overflow-x-auto mx-2">
+<div class="relative overflow-x-auto m-2">
         <table class="w-full text-sm text-left text-dark-blue">
             <thead class="text-xs text-left text-white uppercase p-2 px-2">
                 <tr class="bg-light-gold text-left">
@@ -53,7 +52,6 @@
                     <td class="p-3">
 
                     </td>
-                    
                     <td class="p-3">
                         Programación Web
                     </td>

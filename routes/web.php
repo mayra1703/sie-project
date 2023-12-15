@@ -72,5 +72,4 @@ Route::view('/datos',"datos");
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
-Route::get('../calificaciones', [CalificacionController::class, '../mostrarCalificaciones']);
-Route::get('/calificaciones', [CalificacionController::class, 'index'])->name('calificaciones.index');
+Route::get('/calificaciones', [CalificacionController::class, 'index'])->name('iframe.calificaciones');

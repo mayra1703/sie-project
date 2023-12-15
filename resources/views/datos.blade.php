@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('css/cssdashboard.css') }}">
-    <title>Datos Personales</title>
+    <title>Dashboard</title>
 </head>
 
 <body class="h-screen bg-slate-100">
@@ -17,49 +16,49 @@
                 </li>
                 <span class="flex justify-center text-center m-2">User</span>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="{{ route('iframe.personales') }}" target="miIframe">
                         <span class="nav-item">Datos Generales</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarCalificaciones()">
                         <span class="nav-item">Calificaciones</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarGrupos()">
                         <span class="nav-item">Grupos Actuales</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarHorario()">
                         <span class="nav-item">Horario</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarKardex()">
                         <span class="nav-item">Kardex</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarPagos()">
                         <span class="nav-item">Pagos de Servicios</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarEvaluacion()">
                         <span class="nav-item">Evaluacion Docente</span>
                     </a>
                 </li>
 
-                <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
+                <li class="hover:bg-slate-100 hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="{{ route('welcome') }}">
                         <span class="nav-item">Cerrar Sesion</span>
                     </a>

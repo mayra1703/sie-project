@@ -42,6 +42,6 @@ class CalificacionController extends Controller
         Calificacion::create($request->all());
 
         // Redirige a la vista de calificaciones
-        return redirect()->route('calificaciones.index')->with('success', 'Calificación creada correctamente');
+        return redirect()->route('iframe.calificaciones')->with('success', 'Calificación creada correctamente');
     }
 }
