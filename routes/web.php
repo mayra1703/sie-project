@@ -66,7 +66,6 @@ Route::get('/obtener-evaluacion', [IframeController::class, 'obtenerEvaluacion']
 
 Route::view('/login',"login");
 Route::view('/registro', "register");
-Route::view('/datos',"datos");
 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
