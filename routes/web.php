@@ -19,35 +19,41 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/personales', function () {
+    return view('iframe.personales');
+})->name('personales');
+
 Route::get('/datos', function () {
-    return view('datos');
+    return view('iframe.datos');
 })->name('datos');
 
 Route::get('/horario', function () {
-    return view('horario');
+    return view('iframe.horario');
 })->name('horario');
 
 Route::get('/calificaciones', function () {
-    return view('calificaciones');
+    return view('iframe.calificaciones');
 })->name('calificaciones');
 
 Route::get('/kardex', function () {
-    return view('kardex');
+    return view('iframe.kardex');
 })->name('kardex');
 
 Route::get('/grupos', function () {
-    return view('grupos');
+    return view('iframe.grupos');
 })->name('grupos');
 
 Route::get('/pagos', function () {
-    return view('pagos');
+    return view('iframe.pagos');
 })->name('pagos');
 
 Route::get('/evaluacion', function () {
-    return view('evaluacion');
+    return view('iframe.evaluacion');
 })->name('evaluacion');
 
-Route::get('/iframe', [IframeController::class, 'calificaciones'])->name('iframe.calificaciones');
+Route::get('/iframe', [IframeController::class, 'personales'])->name('iframe.personales');
+
+Route::get('/obtener-calificaciones', [IframeController::class, 'obtenerCalificaciones'])->name('iframe.calificaciones');
 
 Route::get('/obtener-grupos', [IframeController::class, 'obtenerGrupos'])->name('iframe.grupos');
 

@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class IframeController extends Controller
 {
-    public function calificaciones(){
-        return view('iframe.calificaciones');
+    public function personales(){
+        return view('iframe.personales');
+    }
+
+    public function obtenerCalificaciones(){
+        return response()->json(['contenido' => view('iframe.calificaciones')->render()]);
     }
 
     public function obtenerGrupos(){

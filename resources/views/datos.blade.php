@@ -19,57 +19,49 @@
                 <span class="flex justify-center text-center m-2">User</span>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="#">
-                        <i class="fas fa-home"></i>
+                    <a href="{{ route('iframe.personales') }}" target="miIframe">
                         <span class="nav-item">Datos Generales</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
-                    <a href="{{ route('iframe.calificaciones') }}" target="miIframe">
-                        <i class="fas fa-kardex"></i>
+                    <a href="javascript:void(0)" onclick="cargarCalificaciones()">
                         <span class="nav-item">Calificaciones</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarGrupos()">
-                        <i class="fas fa-wallet"></i>
                         <span class="nav-item">Grupos Actuales</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarHorario()">
-                        <i class="fas fa-grades"></i>
                         <span class="nav-item">Horario</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarKardex()">
-                        <i class="fas fa-schedule"></i>
                         <span class="nav-item">Kardex</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarPagos()">
-                        <i class="fas fa-user"></i>
                         <span class="nav-item">Pagos de Servicios</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="javascript:void(0)" onclick="cargarEvaluacion()">
-                        <i class="fas fa-user"></i>
                         <span class="nav-item">Evaluacion Docente</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-white hover:text-dark-blue p-2 mt-4 rounded-s-lg">
                     <a href="{{ route('welcome') }}">
-                        <i class="fas fa-logout"></i>
                         <span class="nav-item">Cerrar Sesion</span>
                     </a>
                 </li>
@@ -77,10 +69,19 @@
         </nav>
         
         <div class="m-3 w-full flex" id="contenedor">
-            <iframe id="miIframe" src="{{ route('iframe.calificaciones') }}" class="flex-grow"></iframe>
+            <iframe id="miIframe" src="{{ route('iframe.personales') }}" class="flex-grow"></iframe>
         </div>
 
         <script>
+            function cargarCalificaciones() {
+                // Realizar una solicitud AJAX para obtener el nuevo contenido
+                fetch("{{ route('iframe.calificaciones') }}")
+                    .then(response => response.json())
+                    .then(data => {
+                        actualizarContenido(data.contenido);
+                    });
+            }
+
             function cargarGrupos() {
                 // Realizar una solicitud AJAX para obtener el nuevo contenido
                 fetch("{{ route('iframe.grupos') }}")
