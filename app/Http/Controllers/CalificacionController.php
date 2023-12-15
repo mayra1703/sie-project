@@ -3,21 +3,38 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Calificaciones;
 
 class CalificacionController extends Controller
 {
+    public function index()
+    {
+        $calificaciones = Calificaciones::all();
+        return view('calificaciones.index', compact('calificaciones'));
+    }
+
+    public function create()
+    {
+        // Aquí puedes obtener la lista de estudiantes y cursos si lo necesitas
+        // $estudiantes = Estudiante::all();
+        // $cursos = Curso::all();
+
+        return view('calificaciones.create');
+    }
+
     public function store(Request $request)
     {
+        // Valida los datos del formulario
         $request->validate([
-            'calificacion' => 'required|numeric|min:0|max:10', // Puedes ajustar las reglas de validación según tus requisitos
+            'id_estudiante' => 'required|exists:estudiantes,id',
+            'id_curso' => 'required|exists:cursos,id',
+            'calificacion' => 'required|numeric',
         ]);
 
-        $calificacion = Calificacion::create([
-            'calificacion' => $request->input('calificacion'),
-        ]);
+        // Crea una nueva instancia del modelo Calificacion
+        Calificacion::create($request->all());
 
-        // Puedes realizar acciones adicionales después de guardar la calificación
-
-        return redirect()->route('ruta.donde.redirigir'); // Ajusta la ruta de redirección según tu aplicación
+        // Redirige a la vista de calificaciones
+        return redirect()->route('calificaciones.index')->with('success', 'Calificación creada correctamente');
     }
 }

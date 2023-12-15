@@ -45,233 +45,42 @@
                 </tr>
             </thead>
             <tbody class="text-left">
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        AEB10555SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Programación Web
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        AEC10345SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Fundamentos de Telecomunicaciones
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        SCA10255SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Taller de Base de Datos
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        SCA10265SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Taller de Sistemas Operativos
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        SCC10075SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Fundamentos Ing. de Software
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        SCC10105SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Graficación
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
-                <tr class="bg-white border-b border-gray-200">
-                    <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
-                        SCD10155SA
-                    </th>
-                    <td class="p-3">
-                        
-                    </td>
-                    <td class="p-3">
-                        Lenguajes y Autómatas
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                    <td class="p-3">
-                        100
-                    </td>
-                </tr>
+                @foreach ($calificaciones as $calificacion)
+                    <tr class="bg-white border-b border-gray-200">
+                        <th scope="row" class="p-2 mr-2 text-left font-medium text-gray-900 whitespace-nowrap">
+                            {{ $calificacion->id_estudiante }}
+                        </th>
+                        <td class="p-3">
+                            {{-- Agrega aquí el campo 'Re' si lo necesitas --}}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->materia->nombre }} {{-- Asumiendo que tienes una relación con AltaCurso y el campo 'nombre' --}}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->calificacion }}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->u1 }}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->u2 }}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->u3 }}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->u4 }}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->u5 }}
+                        </td>
+                        <td class="p-3">
+                            {{ $calificacion->u6 }}
+                        </td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
-
 </body>
 </html>

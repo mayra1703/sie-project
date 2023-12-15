@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\IframeController;
-
+use App\Http\Controllers\CalificacionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,19 +68,9 @@ Route::get('/obtener-evaluacion', [IframeController::class, 'obtenerEvaluacion']
 Route::view('/login',"login");
 Route::view('/registro', "register");
 Route::view('/datos',"datos");
-/*
-Route::get('login', function(){
-    $credentials = request()->only('email', 'password');
-   
-   if(Auth::attempt($credentials)){
-        return view('datos');
-    }else{
-        return view('login');
-    }
-    
-    
-});*/
 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('../calificaciones', [CalificacionController::class, '../mostrarCalificaciones']);
+Route::get('/calificaciones', [CalificacionController::class, 'index'])->name('calificaciones.index');

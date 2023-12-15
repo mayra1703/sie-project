@@ -74,7 +74,7 @@
         <script>
             function cargarCalificaciones() {
                 // Realizar una solicitud AJAX para obtener el nuevo contenido
-                fetch("{{ route('iframe.calificaciones') }}")
+                 fetch("{{ route('iframe.calificaciones') }}")
                     .then(response => response.json())
                     .then(data => {
                         actualizarContenido(data.contenido);
