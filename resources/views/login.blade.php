@@ -22,7 +22,7 @@
                 <div class="form-content">
                     <div class="login-form">
                         <div class="title">Bienvenido al SIE</div>
-                            <form method="POST" >
+                            <form  action="/datos" method="get">
                                 @csrf
                                 <div class="input-boxes">
                                     <div class="input-box">
@@ -64,6 +64,6 @@
                     </div>
                 </div>
         </div>
-    
+
 </body>
 </html>

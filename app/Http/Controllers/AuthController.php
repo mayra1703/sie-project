@@ -20,6 +20,7 @@ class AuthController extends Controller
         //si no esta logado
         return view('login');
     }
+    /*
     public function login(Request $request){
         //comprobar que se han introducido
         $request->validate([
@@ -32,12 +33,35 @@ class AuthController extends Controller
             return redirect()->intended('calificaciones')->withSuccess('Logado Correctamente');
         }
         return redirect('/')->withSuccess('Los datos no son correctos');
-    }
+    }*/
     public function logados(){
         if(Auth::check()){
             return view('calificaciones');
         }
         return redirect('/')->withSuccess('No tienes acceso');
     }
+    public function showLoginForm()
+    {
+        return view('login');
+    }
 
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            // Autenticación exitosa
+            return redirect()->intended('dashboard');
+        }
+
+        // Autenticación fallida
+        return redirect()->back()->withErrors(['error' => 'Credenciales incorrectas']);
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('login');
+    }
 }
+

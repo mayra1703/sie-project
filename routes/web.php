@@ -62,8 +62,8 @@ Route::get('/obtener-evaluacion', [IframeController::class, 'obtenerEvaluacion']
 Route::view('/login',"login");
 Route::view('/registro', "register");
 Route::view('/datos',"datos");
-
-Route::post('login', function(){
+/*
+Route::get('login', function(){
     $credentials = request()->only('email', 'password');
    
    if(Auth::attempt($credentials)){
@@ -73,4 +73,8 @@ Route::post('login', function(){
     }
     
     
-});
+});*/
+
+Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('login', [AuthController::class, 'login']);
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
