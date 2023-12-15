@@ -9,4 +9,14 @@ class AltaCalificaciones extends Model
 {
     protected $fillable = ['calificacion'];
     use HasFactory;
+
+    public function alumno()
+    {
+        return $this->belongsTo(AltaEstudiante::class);
+    }
+
+    public function materia()
+    {
+        return $this->belongsTo(AltaCurso::class);
+    }
 }

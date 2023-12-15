@@ -8,12 +8,7 @@
     <title>Datos Personales</title>
 </head>
 
-<<<<<<< HEAD
 <body class="h-screen bg-slate-100">
-=======
-<body class="h-screen">
-    
->>>>>>> 225424031fa69f77de43900ca191c5674e34e963
     <div class="flex h-screen">
         <nav class='h-full w-60 bg-gradient-to-b from-dark-blue via-light-blue to-turquese text-white font-bold'>
             <ul class="ml-2 mb-2 mt-2 w-60 p-2">

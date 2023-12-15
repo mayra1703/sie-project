@@ -99,7 +99,7 @@
                 <li class="flex justify-between py-4 px-5 my-3 bg-white rounded-md">
                     <div class="flex min-w-0 gap-x-4">
                         <div class="min-w-0 flex-auto">
-                            <p class="text-lg font-bold leading-6 text-dark-blue">Reinscripcion</p>
+                            <p class="text-lg font-bold leading-6 text-dark-blue">Reinscripción</p>
                             <p class="mt-2 truncate text-xs leading-5 text-gray-500">Escolarizado</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                 <li class="flex justify-between py-4 px-5 my-3 bg-white rounded-md">
                     <div class="flex min-w-0 gap-x-4">
                         <div class="min-w-0 flex-auto">
-                            <p class="text-lg font-bold leading-6 text-dark-blue">Reinscripcion</p>
+                            <p class="text-lg font-bold leading-6 text-dark-blue">Reinscripción</p>
                             <p class="mt-2 truncate text-xs leading-5 text-gray-500">Semiescolarizado</p>
                         </div>
                     </div>
@@ -141,8 +141,8 @@
                 <li class="flex justify-between py-4 px-5 my-3 bg-white rounded-md">
                     <div class="flex min-w-0 gap-x-4">
                         <div class="min-w-0 flex-auto">
-                            <p class="text-lg font-bold leading-6 text-dark-blue">Ingles</p>
-                            <p class="mt-2 truncate text-xs leading-5 text-gray-500">Modulo 1, 2 y 3</p>
+                            <p class="text-lg font-bold leading-6 text-dark-blue">Inglés</p>
+                            <p class="mt-2 truncate text-xs leading-5 text-gray-500">Módulo 1, 2 y 3</p>
                         </div>
                     </div>
                     

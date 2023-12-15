@@ -18,4 +18,8 @@ class AltaEstudiante extends Model
         'carrera',
     ];
     use HasFactory;
+
+    public function calificaciones(){
+        return $this->hasMany(AltaCalificaciones::class);
+    }
 }

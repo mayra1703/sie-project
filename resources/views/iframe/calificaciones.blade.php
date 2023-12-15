@@ -8,7 +8,7 @@
     <title>Calificaciones</title>
 </head>
 <body>
-    <div class="relative overflow-x-auto mx-2">
+    <div class="relative overflow-x-auto mx-2 mt-2">
         <table class="w-full text-sm text-left text-dark-blue">
             <thead class="text-xs text-left text-white uppercase p-2 px-2">
                 <tr class="bg-light-gold text-left">
