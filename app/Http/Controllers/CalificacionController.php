@@ -7,7 +7,7 @@ use App\Models\Calificaciones;
 
 class CalificacionController extends Controller
 {
-    public function index()
+    public function datosCalificaciones()
     {
         $calificaciones1 = Calificaciones::find(1);
         $calificaciones2 = Calificaciones::find(2);

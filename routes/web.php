@@ -31,10 +31,6 @@ Route::get('/horario', function () {
     return view('iframe.horario');
 })->name('horario');
 
-Route::get('/calificaciones', function () {
-    return view('iframe.calificaciones');
-})->name('calificaciones');
-
 Route::get('/kardex', function () {
     return view('iframe.kardex');
 })->name('kardex');
@@ -52,6 +48,9 @@ Route::get('/evaluacion', function () {
 })->name('evaluacion');
 
 Route::get('/iframe', [IframeController::class, 'personales'])->name('iframe.personales');
+
+
+Route::get('/calificaciones', [CalificacionController::class, 'datosCalificaciones'])->name('iframe.calificaciones');
 
 Route::get('/obtener-calificaciones', [IframeController::class, 'obtenerCalificaciones'])->name('iframe.calificaciones');
 
@@ -72,4 +71,3 @@ Route::view('/datos',"datos");
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
-Route::get('/calificaciones', [CalificacionController::class, 'index'])->name('calificaciones.index');

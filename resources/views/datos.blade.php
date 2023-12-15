@@ -73,10 +73,10 @@
         <script>
             function cargarCalificaciones() {
                 // Realizar una solicitud AJAX para obtener el nuevo contenido
-                 fetch("{{ route('iframe.calificaciones') }}")
-                    .then(response => response.json())
+                fetch("{{ route('iframe.calificaciones') }}")
+                    .then(response => response.text())  // Cambiado a response.text() en lugar de response.json()
                     .then(data => {
-                        actualizarContenido(data.contenido);
+                        actualizarContenido(data);
                     });
             }
 
