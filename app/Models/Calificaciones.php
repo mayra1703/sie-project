@@ -7,16 +7,25 @@ use Illuminate\Database\Eloquent\Model;
 
 class Calificaciones extends Model
 {
-    protected $fillable = ['calificacion'];
+    protected $fillable = [
+        'calificacion_total',
+        'calificacionU1',
+        'calificacionU2',
+        'calificacionU3',
+        'calificacionU4',
+        'calificacionU5',
+        'calificacionU6'
+    ];
+
     use HasFactory;
-
-    public function alumno()
-    {
-        return $this->belongsTo(AltaEstudiante::class);
-    }
-
-    public function materia()
-    {
-        return $this->belongsTo(AltaCurso::class, 'id_curso');
-    }
 }
+    
+$nuevasCalificaciones = Calificaciones::create([
+    'calificacion_total' => '90',
+    'calificacionU1' => '90',
+    'calificacionU2' => '92',
+    'calificacionU3' => '100',
+    'calificacionU4' => '90',
+    'calificacionU5' => '93',
+    'calificacionU6' => '90',
+]);

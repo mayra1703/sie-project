@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCalificacionesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -16,14 +16,16 @@ class CreateCalificacionesTable extends Migration
         Schema::create('calificaciones', function (Blueprint $table){
 
             $table->id();
-            $table->unsignedBigInteger('id_estudiante');
-            $table->unsignedBigInteger('id_curso');
-            $table->float('calificacion');
+            $table->float('calificacion_total');
+            $table->integer('calificacionU1')->default(0);
+            $table->integer('calificacionU2')->default(0);
+            $table->integer('calificacionU3')->default(0);
+            $table->integer('calificacionU4')->default(0);
+            $table->integer('calificacionU5')->default(0);
+            $table->integer('calificacionU6')->default(0);
+
             $table->timestamps();
 
-            // Claves foráneas
-            $table->foreign('id_estudiante')->references('id_estudiante')->on('estudiantes');
-            $table->foreign('id_curso')->references('id_curso')->on('cursos');
         });
     }
 

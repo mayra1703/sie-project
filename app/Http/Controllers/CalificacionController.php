@@ -9,8 +9,8 @@ class CalificacionController extends Controller
 {
     public function index()
     {
-        $calificaciones = Calificaciones::all();
-        return view('calificaciones.index', compact('calificaciones'));
+        $calificaciones = Calificaciones::find(1);
+        return view('iframe.calificaciones', ['calificaciones' => $calificaciones]);
     }
 
     public function create()
