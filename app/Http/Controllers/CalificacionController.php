@@ -11,8 +11,13 @@ class CalificacionController extends Controller
     {
         $calificaciones1 = Calificaciones::find(1);
         $calificaciones2 = Calificaciones::find(2);
-        
-        return view('iframe.calificaciones', compact('calificaciones1', 'calificaciones2'));
+        $calificaciones3 = Calificaciones::find(3);
+        $calificaciones4 = Calificaciones::find(4);
+        $calificaciones5 = Calificaciones::find(5);
+        $calificaciones6 = Calificaciones::find(6);
+        $calificaciones7 = Calificaciones::find(7);
+
+        return view('iframe.calificaciones', compact('calificaciones1', 'calificaciones2', 'calificaciones3', 'calificaciones4', 'calificaciones5', 'calificaciones6', 'calificaciones7'));
     }
 
     public function create()

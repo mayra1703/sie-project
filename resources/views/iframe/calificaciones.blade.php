@@ -123,25 +123,25 @@
                         Taller de Base de Datos
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones3->calificacionU6 }}
                     </td>
                 </tr>
                 <tr class="bg-white border-b border-gray-200">
@@ -155,25 +155,25 @@
                         Taller de Sistemas Operativos
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones4->calificacionU6 }}
                     </td>
                 </tr>
                 <tr class="bg-white border-b border-gray-200">
@@ -187,25 +187,25 @@
                         Fundamentos Ing. de Software
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones5->calificacionU6 }}
                     </td>
                 </tr>
                 <tr class="bg-white border-b border-gray-200">
@@ -219,25 +219,25 @@
                         Graficación
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones6->calificacionU6 }}
                     </td>
                 </tr>
                 <tr class="bg-white border-b border-gray-200">
@@ -251,25 +251,25 @@
                         Lenguajes y Autómatas
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones7->calificacionU6 }}
                     </td>
                 </tr>
             </tbody>
