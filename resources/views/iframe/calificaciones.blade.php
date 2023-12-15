@@ -58,25 +58,25 @@
                         Programación Web
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacion_total }}
+                        {{ $calificaciones1->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacionU1 }}
+                        {{ $calificaciones1->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacionU2 }}
+                        {{ $calificaciones1->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacionU3 }}
+                        {{ $calificaciones1->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacionU4 }}
+                        {{ $calificaciones1->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacionU5 }}
+                        {{ $calificaciones1->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        {{ $calificaciones->calificacionU6 }}
+                        {{ $calificaciones1->calificacionU6 }}
                     </td>
                 </tr>
                 
@@ -91,25 +91,25 @@
                         Fundamentos de Telecomunicaciones
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacion_total }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacionU1 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacionU2 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacionU3 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacionU4 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacionU5 }}
                     </td>
                     <td class="p-3">
-                        100
+                        {{ $calificaciones2->calificacionU6 }}
                     </td>
                 </tr>
                 <tr class="bg-white border-b border-gray-200">
